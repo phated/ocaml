@@ -50,6 +50,16 @@ VERSION                  typo.missing-header
 api_docgen/*.mld                typo.missing-header
 api_docgen/alldoc.tex           typo.missing-header
 tools/mantis2gh_stripped.csv typo.missing-header
+package.json             typo.prune
+clone-flexdll            typo.prune
+configure-windows        typo.prune
+node_modules             typo.prune
+_esy                     typo.prune
+test-app/*               typo.prune
+esy.lock/*               typo.prune
+esy-*                    typo.prune
+.ci/*                    typo.prune
+
 
 *.adoc                   typo.long-line=may
 
@@ -214,3 +224,9 @@ testsuite/tests/translprim/module_coercion.ml text eol=lf
 # This is forced to \n to allow the Cygwin testsuite to pass on a
 # Windows-checkout
 testsuite/tests/parsetree/locations_test.ml text eol=lf
+
+# esy
+esy-build text eol=lf
+esy-configure text eol=lf
+clone-flexdll text eol=lf
+configure-windows text eol=lf

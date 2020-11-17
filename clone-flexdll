@@ -1,0 +1,13 @@
+#! /bin/sh
+
+# clone-flexdll
+#
+# Brings in flexdll, if necessary
+
+if [ -d "flexdll" ] && [ -f "flexdll/flexdll.c" ]; then
+    echo "[Flexdll] Already present, no need to clone."
+else
+    echo "[Flexdll] Cloning..."
+    git clone https://github.com/alainfrisch/flexdll --branch 0.39
+    echo "[Flexdll] Clone successful!"
+fi
