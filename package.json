@@ -11,6 +11,9 @@
       "./esy-build"
     ],
     "buildsInSource": true,
+    "buildEnv": {
+      "AS": "#{os == 'windows' ? 'x86_64-w64-mingw32-as' : ''}"
+    },
     "exportedEnv": {
       "OCAMLLIB": {
         "val": "#{ocaml.lib / 'ocaml'}",
